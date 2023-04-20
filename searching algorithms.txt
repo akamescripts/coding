@@ -1,0 +1,121 @@
+Linear Search: A simple algorithm that searches for a target value within an array or list by checking each element in sequence until a match is found or the end of the array is reached.
+
+Binary Search: A faster algorithm than linear search that searches for a target value in a sorted array or list by repeatedly dividing the search interval in half until the target value is found or determined to not exist in the array.
+
+Jump Search: A faster algorithm than linear search that searches for a target value in a sorted array or list by skipping elements based on a fixed jump size until an element is found that is greater than the target value. The algorithm then performs a linear search on the interval between the previous and current elements to find the target value.
+
+Interpolation Search: A faster algorithm than binary search for uniformly distributed sorted arrays or lists. The algorithm estimates the position of the target value based on its value and the values of the first and last elements in the array or list, and then narrows the search interval based on this estimate until the target value is found or determined to not exist in the array.
+
+Exponential Search: A faster algorithm than binary search for unbounded (or unknown size) sorted arrays or lists. The algorithm first finds a range that the target value is within by repeated doubling of the search interval size, and then performs binary search within that range.
+
+Fibonacci Search: A faster algorithm than binary search for certain types of sorted arrays or lists. The algorithm narrows the search interval based on Fibonacci numbers, which are chosen to approximate the golden ratio, and then performs binary search within that interval.
+
+Ternary Search: An algorithm that searches for a target value within an unimodal function by dividing the search interval into three parts and determining which part the target value is in. The algorithm then recursively searches within the appropriate interval until the target value is found or determined to not exist in the function.
+
+Depth-First Search (DFS): A search algorithm that explores as far as possible along each branch of a graph or tree before backtracking to explore other branches.
+
+Breadth-First Search (BFS): A search algorithm that explores all the nodes at the current depth of a graph or tree before moving on to explore all the nodes at the next depth.
+
+A* Search Algorithm: A heuristic search algorithm that combines the advantages of both BFS and DFS to find the shortest path between two points in a graph or grid. The algorithm uses a heuristic function to estimate the distance to the target, and chooses the next node to explore based on this estimated distance plus the cost to reach that node from the starting node.
+
+Best-First Search Algorithm: A search algorithm that selects the next node to explore based on a heuristic function that estimates the distance to the target, without necessarily exploring all nodes at the current depth before moving to the next depth.
+
+Hill Climbing Search Algorithm: A local search algorithm that iteratively improves a solution by making small changes to it and selecting the best neighboring solution, until a local maximum is reached.
+
+Simulated Annealing Search Algorithm: A global search algorithm that allows some non-optimal moves to escape local maxima by probabilistically accepting worse solutions as the search progresses.
+
+Tabu Search Algorithm: A search algorithm that avoids revisiting recently explored solutions by maintaining a list of "tabu" moves and temporarily forbidding them.
+
+Genetic Algorithms: A search algorithm inspired by biological evolution that uses genetic operators (mutation, crossover, selection) to iteratively evolve a population of candidate solutions.
+
+Ant Colony Optimization: A metaheuristic algorithm that is inspired by the behavior of ants, and uses pheromone trails to guide the search for a global optimum.
+
+Particle Swarm Optimization: A metaheuristic algorithm that is inspired by the behavior of bird flocks, and uses a population of particles that communicate and move towards the best solution found so far.
+
+Artificial Bee Colony Algorithm: A metaheuristic algorithm that is inspired by the behavior of honey bees, and uses a population of "bees" that explore the search space and communicate to find the best solution.
+
+Harmony Search Algorithm: A metaheuristic algorithm that is inspired by the process of music improvisation, and uses a population of "musicians" that generate new "harmonies" to improve the solution.
+
+Firefly Algorithm: A metaheuristic algorithm that is inspired by the behavior of fireflies, and uses a population of "fireflies" that move towards brighter fireflies (i.e., better solutions).
+
+Grey Wolf Optimization Algorithm: A metaheuristic algorithm that is inspired by the behavior of grey wolves, and uses a population of "wolves" that have four different hunting strategies to search for the best solution.
+
+Krill Herd Algorithm: A metaheuristic algorithm that is inspired by the behavior of krill swarms, and uses a population of "krill" that move towards the best solution found so far and avoid other krill.
+
+Beam Search Algorithm: A search algorithm that explores a fixed number of nodes at each level of the search tree, and selects the best solutions among them.
+
+Bidirectional Search Algorithm: A search algorithm that explores the search space from both the starting and target nodes, and stops when the two searches meet.
+
+Depth-Limited Search Algorithm: A search algorithm that limits the depth of the search tree to a fixed value, and stops when that depth is reached.
+
+Iterative Deepening Depth-First Search Algorithm: A search algorithm that repeatedly performs depth-limited search with increasing depth limits, until the target node is found.
+
+Uniform Cost Search Algorithm: A search algorithm that explores the search space by always selecting the node with the lowest cost so far.
+
+Dijkstra's Algorithm: A search algorithm that finds the shortest path between a starting node and all other nodes in a weighted graph.
+
+Bellman-Ford Algorithm: A single-source shortest path algorithm that works for graphs with negative edge weights, unlike Dijkstra's Algorithm. It uses dynamic programming and can detect negative-weight cycles.
+
+Floyd-Warshall Algorithm: An all-pairs shortest path algorithm that finds the shortest path between all pairs of vertices in a weighted graph. It uses dynamic programming and can handle graphs with negative edge weights.
+
+Johnson's Algorithm: A technique to find all-pairs shortest paths in a graph that uses Dijkstra's Algorithm as a subroutine. It first transforms the input graph to remove negative edge weights, and then applies Dijkstra's Algorithm to each vertex in the graph.
+
+Kruskal's Algorithm: A greedy algorithm for finding the minimum spanning tree of a weighted undirected graph. It adds edges to the tree in increasing order of weight, while avoiding cycles.
+
+Prim's Algorithm: Another greedy algorithm for finding the minimum spanning tree of a weighted undirected graph. It starts with a single vertex and adds the edge with the smallest weight that connects it to an unvisited vertex until all vertices have been visited.
+
+Depth-First Branch and Bound Algorithm: An algorithm that uses depth-first search to explore the solution space of a problem, keeping track of the best solution found so far. It uses a lower bound to prune search paths that cannot lead to a better solution.
+
+Best-First Branch and Bound Algorithm: An algorithm that explores the solution space of a problem using a heuristic function to guide the search. It keeps track of the best solution found so far and prunes search paths that cannot lead to a better solution.
+
+Iterative Deepening A* Algorithm: An algorithm that combines the depth-first search of iterative deepening with the heuristic guidance of A*. It performs multiple depth-limited searches, gradually increasing the depth limit, until the goal is found.
+
+Recursive Best-First Search Algorithm: A search algorithm that recursively applies a heuristic function to a node's children to select the most promising one. It can be used to solve optimization problems.
+
+Limited Discrepancy Search Algorithm: A search algorithm that uses depth-first search with backtracking to explore the solution space of a problem. It limits the number of times it backtracks, which can improve search efficiency.
+
+Alpha-Beta Pruning Algorithm: An algorithm that optimizes the minimax algorithm for game playing by pruning search paths that cannot lead to a better outcome. It is based on the observation that the value of a node can be bounded by the values of its ancestors.
+
+Monte Carlo Tree Search Algorithm: An algorithm that uses random simulations to explore the solution space of a problem. It constructs a search tree that is incrementally expanded by random simulations, and uses the results to guide further searches.
+
+Red-Black Tree Search Algorithm: A data structure that stores elements in a balanced binary search tree, with the additional constraint that the tree is "colored" in a certain way to ensure balance. It supports efficient search, insertion, and deletion operations.
+
+AVL Tree Search Algorithm: A data structure that stores elements in a balanced binary search tree, with the additional constraint that the heights of the left and right subtrees of each node differ by at most 1. It supports efficient search, insertion, and deletion operations.
+
+B-Tree Search Algorithm: A data structure that stores elements in a balanced tree with multiple children per node. It is designed to minimize disk accesses for storage systems, and supports efficient search, insertion, and deletion operations.
+
+B+ Tree Search Algorithm: A balanced tree data structure designed to minimize the number of disk accesses required to access data. It is commonly used in databases and file systems.
+
+2-3 Tree Search Algorithm: A tree data structure in which each internal node has either one data element and two children, or two data elements and three children. It is a special case of a B-tree where the nodes have a fixed maximum number of children.
+
+Trie Search Algorithm: A tree-like data structure used to store a collection of strings, with each node representing a common prefix. It is commonly used in search engines and compilers.
+
+Suffix Tree Search Algorithm: A tree-like data structure used to store all the suffixes of a given string. It is commonly used in bioinformatics and text processing.
+
+Splay Tree Search Algorithm: A self-adjusting binary search tree in which frequently accessed nodes are moved closer to the root for faster access. It is commonly used in cache optimization and garbage collection.
+
+Skip List Search Algorithm: A probabilistic data structure designed to provide fast search, insertion and deletion operations in a linked list. It is commonly used in database indexing and web search engines.
+
+Hash Table Search Algorithm: A data structure that uses a hash function to map keys to indexes in an array. It provides constant-time average-case complexity for search, insertion, and deletion operations.
+
+Binary Heap Search Algorithm: A tree-based data structure that satisfies the heap property, which is that every parent node is either greater than or equal to its children (max heap) or less than or equal to its children (min heap). It is commonly used in heap sort and priority queue implementations.
+
+Boyer-Moore Algorithm: A string searching algorithm that uses a preprocessing step to skip as many characters as possible before actually searching the pattern. It is commonly used in text editors and compilers.
+
+Rabin-Karp Algorithm: A string searching algorithm that uses a hash function to compare the pattern with substrings of the text. It is commonly used in plagiarism detection and spell checking.
+
+Knuth-Morris-Pratt Algorithm: A string searching algorithm that uses a preprocessing step to skip as many characters as possible before actually searching the pattern. It is commonly used in text editors and compilers.
+
+Z-Algorithm: A linear time string searching algorithm that computes the Z-values of a string, which represent the length of the longest substring starting from a given position that is also a prefix of the string. It is commonly used in bioinformatics and data compression.
+
+String Matching with Finite Automata Algorithm: A string searching algorithm that builds a finite automaton to match the pattern with the text. It is commonly used in network security and intrusion detection systems.
+
+Aho-Corasick Algorithm: A string searching algorithm that builds a finite automaton to match multiple patterns with the text. It is commonly used in text processing and virus scanning.
+
+Quick Search Algorithm: A string searching algorithm that uses a hash function to quickly compare the pattern with substrings of the text. It is commonly used in data compression and text indexing.
+
+Baeza-Yates-Gonnet Algorithm: A string searching algorithm that uses a preprocessing step to skip as many characters as possible before actually searching the pattern. It is commonly used in text editors and compilers.
+
+Bitap Algorithm: A string searching algorithm that uses bitwise operations to compare the pattern with substrings of the text. It is commonly used in pattern matching and data compression.
+
+Interpolating Subdivision Search Algorithm: A search algorithm that uses subdivision of intervals and interpolation to find the root of a function. It is commonly used in numerical analysis and optimization.
